@@ -1,4 +1,4 @@
-"""CreditGuard - Credit Card Fraud Detection dashboard (educational demo)."""
+"""FraudLens - Credit Card Fraud Detection dashboard (educational demo)."""
 import time
 from pathlib import Path
 
@@ -8,7 +8,7 @@ import streamlit as st
 
 ROOT = Path(__file__).parent  # repo root, so paths work locally and on Streamlit Cloud
 
-st.set_page_config(page_title="CreditGuard Fraud Detection", page_icon="🛡️", layout="wide")
+st.set_page_config(page_title="FraudLens Fraud Detection", page_icon="🛡️", layout="wide")
 
 
 # ---------- Loading (cached so it only happens once) ----------
@@ -38,7 +38,7 @@ def score(df):
 
 
 # ---------- Header ----------
-st.title("🛡️ CreditGuard: Credit Card Fraud Detection")
+st.title("🛡️ FraudLens: Credit Card Fraud Detection")
 st.caption(f"Best model: **{model_name}** (highest PR-AUC). Educational demo, not for real use.")
 
 tab1, tab2, tab3 = st.tabs(["📊 Model results", "🔴 Live monitor", "📁 Upload CSV"])
