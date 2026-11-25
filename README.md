@@ -235,8 +235,8 @@ credit-card-fraud-detection/
 
 ## 👤 Author
 
-**YOUR NAME** · Machine Learning Course Project (Project 19)
-[GitHub](https://github.com/HimaniLakhote) · [LinkedIn](PASTE_LINK)
+**Himani Lakhote** · Machine Learning  Project
+[GitHub](https://github.com/HimaniLakhote) · [LinkedIn](https://www.linkedin.com/in/himani-lakhote-9015513a9/)
 
 ## 🙏 Acknowledgements
 
