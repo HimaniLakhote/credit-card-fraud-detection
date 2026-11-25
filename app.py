@@ -109,7 +109,9 @@ with tab2:
             bar.progress(end / len(demo))
             shown = demo.iloc[:end][f].copy()
             shown.insert(0, "fraud_prob", probs[:end][f].round(3))
-            shown = shown[["fraud_prob", "Time", "Amount", "Class"]].rename(columns={"Class": "true_label"})
+            # show only the columns that exist, so a different CSV layout can't crash the app
+            keep = [c for c in ["fraud_prob", "Time", "Amount", "Class"] if c in shown.columns]
+            shown = shown[keep].rename(columns={"Class": "true_label"})
             table_box.dataframe(shown.tail(15).iloc[::-1], use_container_width=True, hide_index=True)
             time.sleep(delay)
 
